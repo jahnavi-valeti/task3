@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Leave Application Form</title>
+    <style>
+        /* Internal CSS */
+        body {
+            background-color:antiquewhite;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center; color: blue;">Leave Application Form</h1>
+    <form action="admin.html" method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value="11/10/2024" readonly style="background-color: #e9ecef;" />
+        <br><br>
+        
+        <label for="applicant-name">Applicant Name:</label>
+        <input type="text" id="applicant-name" name="applicant-name" value="Sivaram" required />
+        <br><br>
+        
+        <label for="authority">Authority:</label>
+        <input type="text" id="authority" name="authority" value="Principal/HOD" required />
+        <br><br>
+        
+        <label for="reason">Leave Applying For:</label>
+        <input type="text" id="reason" name="reason" required />
+        <br><br>
+        
+        <label for="leave-start">Leave Start Date:</label>
+        <input type="date" id="leave-start" name="leave-start" required />
+        <br><br>
+        
+        <label for="leave-end">Leave End Date:</label>
+        <input type="date" id="leave-end" name="leave-end" required />
+        <br><br>
+        
+        <button type="submit" style="background-color: green; color: white; border: none; padding: 10px 15px; cursor: pointer;">Apply</button>
+    </form>
+</body>
+</html>
